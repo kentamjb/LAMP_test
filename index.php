@@ -1,11 +1,11 @@
 <?php
-$dsn = 'mysql:dbname=sample_db;host=localhost;';
+$dsn = 'mysql:dbname=test_DB;host=localhost;';
 $user = 'kentamjb';
-$password = 'Morijyobi_1234';
+$password = 'morijyobi';
 try {
     $dbh = new PDO($dsn, $user, $password);
     
-    $sql = "select * from user;";
+    $sql = "select * from sample;";
     $result = $dbh->query($sql);
     
 } catch (PDOException $e) {
@@ -76,7 +76,31 @@ try {
                 </table>
             </div>
             <div class="tab-pane" id="insert">
-                <p>sample tab 2</p>
+                <form action="./insert.php" method="POST">
+					<div class="form-group row">
+    					<label for="id" class="col-sm-2 col-form-label">Id</label>
+    					<div class="col-sm-10">
+      						<input type="text" class="form-control" id="id" name="id">
+  						</div>
+					</div>
+					<div class="form-group row">
+    					<label for="name" class="col-sm-2 col-form-label">Name</label>
+    					<div class="col-sm-10">
+      						<input type="text" class="form-control" id="name" name="id">
+  						</div>
+					</div>
+					<div class="form-group row">
+    					<label for="age" class="col-sm-2 col-form-label">Age</label>
+    					<div class="col-sm-10">
+      						<input type="text" class="form-control" id="age" name="id">
+  						</div>
+					</div>
+					<div class="form-group row">
+    					<div class="col-sm-10">
+      						<button type="button" class="btn btn-primary btn-block">Insert
+  						</div>
+					</div>
+                </form>
             </div>
             <div class="tab-pane" id="update">
                 <p>sample tab 3</p>
