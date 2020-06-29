@@ -46,6 +46,12 @@ try {
         </div>
     </div>
 
+    <?php if($_GET['fg'] == 1 ) { ?>
+        <p>Success</p>
+    <?php } else if if($_GET['fg'] == 2 )  ?>
+        <p>Failed</p>
+    <?php } ?>  
+
     <div class="container">
         <ul class="nav nav-tabs">
             <li class="nav-item"><a href="#select" class="nav-link active" data-toggle="tab">Select</a></li>
