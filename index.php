@@ -36,7 +36,7 @@ try {
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">DB Manager -sample_db-</h1>
+            <h1 class="display-4">DB Manager -test_DB-</h1>
             <p class="read">
                 LAMP環境を構築し、データベース管理webアプリを作成しています。<br>
                 デザインはBootstrapを使用
@@ -75,7 +75,7 @@ try {
                 </table>
             </div>
             <div class="tab-pane" id="insert">
-                <form action="./insert.php" method="POST">
+                <form class="mt-3" action="./insert.php" method="POST">
 					<div class="form-group row">
     					<label for="id" class="col-sm-2 col-form-label">Id</label>
     					<div class="col-sm-10">
@@ -123,7 +123,7 @@ try {
 					</div>
 					<div class="form-group row">
     					<div class="col-sm-10">
-      						<button type="button" class="btn btn-primary btn-block">Insert
+      						<button type="button" class="btn btn-primary btn-block">Update
   						</div>
 					</div>
                 </form>
