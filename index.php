@@ -104,7 +104,7 @@ try {
                 </form>
             </div>
             <div class="tab-pane" id="update">
-            <form action="./update.php" method="POST">
+            <form class="mt-3" action="./update.php" method="POST">
 					<div class="form-group row">
     					<label for="id" class="col-sm-2 col-form-label">Id</label>
     					<div class="col-sm-10">
